@@ -17,3 +17,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 vim.g.catppuccin_flavour = "mocha"
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "#101317", fg = "#7AB0DF" })
+vim.cmd("Catppuccin mocha")
