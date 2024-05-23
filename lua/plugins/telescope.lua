@@ -35,7 +35,7 @@ return {
         files = true,
         add_dirs = true,
         depth = 1,
-        auto_depth = false,
+        auto_depth = true,
         select_buffer = false,
         hidden = { file_browser = false, folder_browser = false },
         hide_parent_dir = false,

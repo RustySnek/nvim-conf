@@ -16,10 +16,11 @@ vim.g.maplocalleader = " "
 keymap("n", "<Leader>fg", ":Telescope git_files<CR>", opts)
 keymap("n", "<Leader>ff", ":Telescope fd<CR>", opts)
 keymap("n", "<Leader>fz", ":Telescope live_grep<CR>", opts)
-keymap("n", "<Leader>fb", ":Telescope file_browser<CR>", opts)
+keymap("n", "<Leader>fb", ":Telescope file_browser path=%:p:h<CR>", opts)
 keymap("n", "<Leader>fm", ":Telescope gitmoji<CR>", opts)
-keymap("n", "<S-e>", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>")
-keymap("n", "<C-s>", ":w<CR>", opts)
+keymap("n", "<S-e>", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>", opts)
+keymap("n", "<C-s>", ":w<CR>", {noremap=true})
+keymap("n", "<A-n>", ":Neogit<CR>", opts)
 
 
 
