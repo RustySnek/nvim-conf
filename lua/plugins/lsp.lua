@@ -4,7 +4,9 @@ return {
 		local lsp = require("lspconfig")
 		lsp.pyright.setup({})
 		lsp.lua_ls.setup({})
-		lsp.tsserver.setup({})
+		lsp.ts_ls.setup({})
+		lsp.nil_ls.setup({})
+    lsp.clangd.setup({})
 
 		lsp.cssls.setup({})
 
